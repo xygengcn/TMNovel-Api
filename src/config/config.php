@@ -1,8 +1,6 @@
 <?php
-$json_string = file_get_contents( 'config.json' );
-
-$configs = json_decode( $json_string, true );
-
+$json_string = file_get_contents(Root_Path . '/config/config.json');
+$configs = json_decode($json_string, true);
 $config = $configs[1];
 
 // $config = array(
